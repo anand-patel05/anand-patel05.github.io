@@ -1,0 +1,141 @@
+html * {
+    font-family: Palatino, "Palatino Linotype", "Palatino LT STD",
+                 "Book Antiqua", Georgia, serif !important;
+}
+
+body {
+    margin: 60px auto;
+    width: 70%;
+    color: black;
+    background: white;
+}
+
+/* Links */
+a {
+    text-decoration: none;
+    color: navy;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: hotpink;
+}
+
+/* Navigation and Footer */
+nav ul,
+footer ul {
+    padding: 0;
+    list-style: none;
+    font-weight: bold;
+    color: maroon;
+    font-size: 19px;
+    line-height: 20.9px;
+}
+
+nav ul li,
+footer ul li {
+    display: inline;
+    margin-right: 20px;
+    color: maroon;
+    font-size: 19px;
+    font-weight: 700;
+    line-height: 20.9px;
+}
+
+/* Headings */
+h1 {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 26.4px;
+}
+
+h2 {
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 32px;
+    margin-top: 35px;
+}
+
+h3 {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+}
+
+/* Text */
+p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+}
+
+ul li {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+}
+
+/* Homepage layout */
+.home-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 60px;
+}
+
+.home-text {
+    flex: 1;
+}
+
+.profile-pic {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-top: 45px;
+}
+
+/* Quote / Code */
+blockquote {
+    font-size: 21px;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+pre {
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 18.5714px;
+}
+
+/* Footer */
+footer {
+    border-top: 1px solid #d5d5d5;
+    margin-top: 30px;
+    padding-top: 15px;
+    font-size: 0.8em;
+}
+
+/* Mobile responsive */
+@media screen and (max-width: 800px) {
+    body {
+        width: 90%;
+        margin: 30px auto;
+    }
+
+    .home-container {
+        flex-direction: column;
+    }
+
+    .profile-pic {
+        width: 180px;
+        height: 180px;
+        margin-top: 10px;
+    }
+
+    nav ul li,
+    footer ul li {
+        display: inline-block;
+        margin-bottom: 8px;
+    }
+}
